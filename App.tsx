@@ -28,11 +28,11 @@
  } from 'react-native/Libraries/NewAppScreen';
 
  import { CategoryCard } from './src/components/CategoryCard';
-
+ import imgCategoryPath from './assets/utils/imgCategoryPath';
 
  const App = () => {
 
-   return <CategoryCard title='repair' img='none' />
+   return <CategoryCard title='Заявка на ремонт' img={imgCategoryPath.repair} />
 
  };
 
