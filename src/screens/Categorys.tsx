@@ -1,13 +1,15 @@
 import React, { FC } from 'react';
-import { SafeAreaView, View, Image, StyleSheet } from 'react-native'
+import { SafeAreaView, View, Image, StyleSheet, ImageBackground } from 'react-native'
 
 import { CategoryCard } from '../components/CategoryCard';
 import imagePath from '../../assets/utils/imgTitlePath';
 import imgCategoryPath from '../../assets/utils/imgCategoryPath';
+import imgBG from '../../assets/utils/imgBG';
 
 export const Categorys: FC = () => {
     return (
         <SafeAreaView style={styles.container} >
+            <ImageBackground source={imgBG.cloud} style={styles.backgroundImg} />
             <Image source={imagePath.bowa} style={styles.title} />
             <Image source={imagePath.medical} style={styles.subTitle} />
             <View style={styles.categorysContainer}>
@@ -30,9 +32,7 @@ export const Categorys: FC = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        paddingLeft: 25,
-        paddingRight: 25
+        flex: 1
     },
     title: {
         alignSelf: 'center',
@@ -53,6 +53,15 @@ const styles = StyleSheet.create({
     },
     categorysColumn: {
         flex: 1,
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
+        alignContent: 'center',
+        alignItems: 'center'
+    },
+    backgroundImg: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        top: 0,
+        resizeMode: 'cover'
     }
 })
