@@ -27,12 +27,12 @@
    ReloadInstructions,
  } from 'react-native/Libraries/NewAppScreen';
 
- import { CategoryCard } from './src/components/CategoryCard';
  import imgCategoryPath from './assets/utils/imgCategoryPath';
+ import { Categorys } from './src/screens/Categorys'
 
  const App = () => {
 
-   return <CategoryCard title='Заявка на ремонт' img={imgCategoryPath.repair} />
+   return <Categorys />
 
  };
 

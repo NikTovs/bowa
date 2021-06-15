@@ -23,13 +23,21 @@ export const CategoryCard: FC<Type> = ({ title, img }) => {
 
 const styles = StyleSheet.create({
     container: {
+        marginTop: 18,
+        paddingTop: 10,
         alignItems: 'center',
         maxWidth: 153,
         borderWidth: 1,
         borderRadius: 15,
+        borderColor: colors.border
     },
     title: {
-        marginTop: 20,
+        marginTop: 10,
+        marginBottom: 15,
         color: colors.categoryTitle,
+        fontWeight: 'bold',
+        fontSize: 16,
+        maxWidth: 136,
+        textAlign: 'center'
     }
 })
