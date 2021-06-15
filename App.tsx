@@ -19,15 +19,6 @@
    View,
  } from 'react-native';
 
- import {
-   Colors,
-   DebugInstructions,
-   Header,
-   LearnMoreLinks,
-   ReloadInstructions,
- } from 'react-native/Libraries/NewAppScreen';
-
- import imgCategoryPath from './assets/utils/imgCategoryPath';
  import { Categorys } from './src/screens/Categorys'
 
  const App = () => {
@@ -35,9 +26,4 @@
    return <Categorys />
 
  };
-
- const styles = StyleSheet.create({
-
- });
-
  export default App;
