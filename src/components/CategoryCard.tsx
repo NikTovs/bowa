@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ImageSourcePropType } from 'react-native'
-
 import colors from '../../assets/utils/colors';
 
 type Type = {

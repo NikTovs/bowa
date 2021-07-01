@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-import { SafeAreaView, View, Image, StyleSheet, ImageBackground } from 'react-native'
-
+import { SafeAreaView, View, Image, StyleSheet, ImageBackground, ScrollView  } from 'react-native'
 import { CategoryCard } from '../components/CategoryCard';
 import imagePath from '../../assets/utils/imgTitlePath';
 import imgCategoryPath from '../../assets/utils/imgCategoryPath';
@@ -8,7 +7,7 @@ import imgBG from '../../assets/utils/imgBG';
 
 export const Categorys: FC = () => {
     return (
-        <SafeAreaView style={styles.container} >
+        <ScrollView style={styles.container} >
             <ImageBackground source={imgBG.cloud} style={styles.backgroundImg} />
             <Image source={imagePath.bowa} style={styles.title} />
             <Image source={imagePath.medical} style={styles.subTitle} />
@@ -26,7 +25,7 @@ export const Categorys: FC = () => {
 
                 </View>
             </View>
-        </SafeAreaView>
+        </ScrollView>
     );
 };
 
